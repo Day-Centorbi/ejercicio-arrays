@@ -8,13 +8,16 @@ var productosDestacados = [
 // NO TOCAR!!!
 
 // 1 - Arreglar el header (Header Menu Area)
+
 // 1.1 - Cambia el valor de los submenus para que tengan los mismos valores que https://array-test.netlify.com/
 var submenus = [
   // Submenu "Shop"
   [
-    ["lorem ipsum", "link.html"],
-    ["lorem ipsum", "link.html"],
-    ["lorem ipsum", "link.html"]
+    ["Shop category", "category.html"],
+    ["Product details", "single-product.html"],
+    ["Produt checkout", "checkout.html"],
+    ["Confirmation", "confirmationt.html"],
+    ["Shopping Cart", "cart.html"],
   ],
   // Submenu "Blog"
   [
@@ -35,14 +38,32 @@ var submenus = [
 // help: img/home/hero-slide1.png img/home/hero-slide2.png img/home/hero-slide3.png
 productosCarrusel.push([
   "img/home/hero-slide1.png",
+  "New Shoes",
+  "Varios modelos"
+]);
+
+productosCarrusel.push([
+  "img/home/hero-slide3.png",
+  "Nuevos productos",
+  "Lista de accesorios"
+]);
+
+productosCarrusel.push([
+  "img/home/hero-slide2.png",
   "Wireless Headphone",
   "Accessories Item"
 ]);
 
 // 3 - Arreglar el listado de productos destacados (Trending product)
 // 3.1 - Quita el ultimo elemento del listado con .pop()
+productosDestacados.pop()
 // 3.2 - Agrega elementos al listado para obtener el mismo resultado que en https://array-test.netlify.com/
-
+productosDestacados.push(["img/product/product4.png", "Accessories", "Wiskera", "$250.00"])
+productosDestacados.push(["img/product/product5.png", "Accessories", "Mochila", "$159.00"])
+productosDestacados.push(["img/product/product6.png", "Accessories", "Mini car", "$40.00"])
+productosDestacados.push(["img/product/product7.png", "Accessories", "Parlante", "$25.00"])
+productosDestacados.push(["img/product/product8.png", "Accessories", "Cargador", "$350.00"])
+productosDestacados.push(["img/product/product2.png", "Accessories", "Crema", "$100.00"])
 /* NO TOCAR */
 var header = document.querySelectorAll(".nav-item.submenu.dropdown");
 header.forEach(function(element, index) {
